@@ -1,0 +1,8 @@
+PeterJausovec.vscode-docker
+codezombiech.gitignore
+dbaeumer.vscode-eslint
+donjayamanne.githistory
+eg2.vscode-npm-script
+msjsdiag.debugger-for-chrome
+waderyan.gitblame
+xabikos.ReactSnippets

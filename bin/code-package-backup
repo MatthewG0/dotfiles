@@ -1,0 +1,11 @@
+#!/bin/sh
+#
+# Usage: code-package-backup
+#
+# Saves a list of your currently installed VSCode packages to
+# packages.txt in the Code directory suitable for install
+# via code-package-install
+
+set -e
+
+code --list-extensions > ~/.dotfiles/Code/packages.txt

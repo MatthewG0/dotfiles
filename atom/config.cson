@@ -1,0 +1,18 @@
+"*":
+  core:
+    disabledPackages: [
+      "markdown-preview"
+    ]
+    telemetryConsent: "no"
+    themes: [
+      "vs-blue-ui"
+      "redmond-syntax"
+    ]
+  "exception-reporting":
+    userId: "fff455a7-0417-f6bd-78da-cc0b11326e85"
+  "find-and-replace":
+    liveSearchMinimumCharacters: 2
+    scrollToResultOnLiveSearch: true
+  welcome:
+    showOnStartup: false
+  whitespace: {}

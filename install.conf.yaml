@@ -1,0 +1,20 @@
+- clean: ['~']
+
+- shell:
+  - [homebrew/install.sh]
+  - [brew tap Homebrew/bundle]
+  - [cat Brewfile local/Brewfile | brew bundle --file=-]
+
+- link:
+    ~/.profile: profile
+    ~/.bash_profile: bash_profile
+    ~/.bashrc: bashrc
+    ~/.gitconfig: gitconfig
+    ~/.atom: atom
+    ~/Library/Application Support/Code/User/settings.json: Code/User/settings.json
+    ~/Library/Application Support/Code/User/keybindings.json: Code/User/keybindings.json
+    ~/Library/Application Support/Code/User/snippets: Code/User/snippets
+
+- shell:
+  - [bin/atom-package-install]
+  - [bin/code-package-install]

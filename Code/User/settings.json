@@ -1,0 +1,21 @@
+// Place your settings in this file to overwrite the default settings
+{
+    "editor.tabSize": 2,
+    "editor.minimap.enabled": true, 
+    "eslint.run": "onType",
+    "eslint.autoFixOnSave": true,
+    "files.exclude": {
+      "**/.git": true,
+      "**/.svn": true,
+      "**/.hg": true,
+      "**/.DS_Store": true,
+      "**/build": true
+    },
+    "window.zoomLevel": 0,
+    "workbench.colorTheme": "Visual Studio Light",
+    "workbench.iconTheme": "vs-seti",
+    "window.nativeTabs": true,
+    "ruby.lint": {
+      "rubocop": true
+    }
+  }

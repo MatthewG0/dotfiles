@@ -1,0 +1,25 @@
+[include]
+  path = ~/.dotfiles/local/gitconfig
+[push]
+	default = simple
+[branch]
+	autosetupmerge = false
+[core]
+	autocrlf = input
+	editor = code --wait
+	excludesfile = ~/.gitignore_global
+[color]
+	ui = true
+[credential]
+  helper = osxkeychain
+  useHttpPath = true
+[merge]
+	conflictStyle = diff3
+[rerere]
+	enabled = 1
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true

@@ -1,0 +1,13 @@
+#!/bin/sh
+#
+# Usage: atom-package-install
+#
+# Installs the atom packages listed in your packages.txt file
+# located in the atom directory
+#
+# You can generate a new list based on currently installed
+# packages via atom-package-backup
+
+set -e
+
+apm install --packages-file ~/.dotfiles/atom/packages.txt

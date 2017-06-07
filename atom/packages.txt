@@ -1,0 +1,15 @@
+atom-ternjs@0.17.0
+file-icons@2.0.13
+language-babel@2.51.0
+linter@1.11.21
+linter-eslint@8.1.0
+markdown-preview-plus@2.4.1
+minimap@4.26.8
+open-recent@5.0.0
+path-copy@0.14.0
+redmond-syntax@1.0.2
+split-diff@1.1.1
+trailing-spaces@0.4.0
+tree-view-open-files@0.3.0
+vs-blue-ui@0.1.2
+
