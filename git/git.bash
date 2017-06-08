@@ -11,4 +11,4 @@ YELLOW="\[\033[1;33m\]"
   BLUE="\[\033[0;34m\]"
 RESET="\[\e[0m\]"
 
-PROMPT_COMMAND='__git_ps1 "[\u@${BLUE}\h${RESET}:\w" "]\\\$ "'
+export PROMPT_COMMAND='__git_ps1 "[\u@${BLUE}\h${RESET}:\w" "]\\\$ ";'${PROMPT_COMMAND}
