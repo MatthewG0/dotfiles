@@ -7,10 +7,10 @@
   - [pip3 install pylint]
 
 - link:
-    ~/.profile: profile
     ~/.bash_profile: bash_profile
     ~/.bashrc: bashrc
     ~/.gitconfig: gitconfig
+    ~/.inputrc: inputrc
     ~/.atom: atom
     ~/Library/Application Support/Code/User/settings.json: Code/User/settings.json
     ~/Library/Application Support/Code/User/keybindings.json: Code/User/keybindings.json
