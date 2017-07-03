@@ -17,5 +17,6 @@
     "window.nativeTabs": true,
     "ruby.lint": {
       "rubocop": true
-    }
+    },
+    "python.linting.pylintPath": "pylint"
   }

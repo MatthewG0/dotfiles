@@ -4,6 +4,7 @@
   - [homebrew/install.sh]
   - [brew tap Homebrew/bundle]
   - [cat Brewfile local/Brewfile | brew bundle --file=-]
+  - [pip3 install pylint]
 
 - link:
     ~/.profile: profile

@@ -12,6 +12,7 @@ brew 'bash-git-prompt'
 brew 'git'
 # brew 'node' # Not recommended, may cause issues with npm
 brew 'perl'
+brew 'python3'
 brew 'ruby'
 brew 'vim'
 brew 'watch'
