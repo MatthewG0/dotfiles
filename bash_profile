@@ -25,11 +25,10 @@ if [ -e ~/.bashrc ]; then
   source ~/.bashrc
 fi
 
-if [ -e $HOME/.nvm/nvm.sh ]; then
-  [[ -s $HOME/.nvm/nvm.sh ]] && . $HOME/.nvm/nvm.sh  # This loads NVM
-  if [ -e $HOME/OneDrive/Dev/Node/node_modules ]; then
-    export NODE_PATH=$HOME/.nvm/versions/node/v0.12.0/lib/node_modules:$HOME/OneDrive/Dev/Node/node_modules:$NODE_PATH
-  fi
+NVM_INSTALL=$(brew --prefix nvm)/nvm.sh
+if [ -e $NVM_INSTALL ]; then
+  export NVM_DIR=~/.nvm
+  [[ -s $NVM_INSTALL ]] && . $NVM_INSTALL  # This loads NVM
 fi
 
 # Other settings
