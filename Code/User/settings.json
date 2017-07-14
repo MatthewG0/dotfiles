@@ -9,7 +9,8 @@
       "**/.svn": true,
       "**/.hg": true,
       "**/.DS_Store": true,
-      "**/build": true
+      "**/build/**": true,
+      "**/node_modules/**": true
     },
     "window.zoomLevel": 0,
     "workbench.colorTheme": "Visual Studio Light",
@@ -17,6 +18,9 @@
     "window.nativeTabs": true,
     "ruby.lint": {
       "rubocop": true
+    },
+    "[python]": {
+      "editor.tabSize": 4
     },
     "python.linting.pylintPath": "pylint"
   }

@@ -12,6 +12,7 @@
     ~/.gitconfig: gitconfig
     ~/.inputrc: inputrc
     ~/.atom: atom
+    ~/.pylintrc: pylintrc
     ~/Library/Application Support/Code/User/settings.json: Code/User/settings.json
     ~/Library/Application Support/Code/User/keybindings.json: Code/User/keybindings.json
     ~/Library/Application Support/Code/User/snippets: Code/User/snippets
