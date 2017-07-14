@@ -1,3 +1,4 @@
+BREW_PREFIX=$(brew --prefix)
 export PATH=/usr/local/bin:/usr/local/sbin:$HOME/.fastlane/bin:$PATH
 export JAVA_HOME=$(/usr/libexec/java_home -v 1.8)
 
@@ -18,17 +19,22 @@ function title {
 title
 
 # bash_completion
-if [ -f $(brew --prefix)/etc/bash_completion ]; then
-  . $(brew --prefix)/etc/bash_completion
+if [ -f $BREW_PREFIX/etc/bash_completion ]; then
+  . $BREW_PREFIX/etc/bash_completion
 fi
 if [ -e ~/.bashrc ]; then
   source ~/.bashrc
 fi
 
-NVM_INSTALL=$(brew --prefix nvm)/nvm.sh
+
+NVM_INSTALL=/usr/local/Cellar/nvm/0.33.2/nvm.sh
+if [ ! -e $NVM_INSTALL ]; then
+  NVM_INSTALL=~/.nvm/nvm.sh
+fi
 if [ -e $NVM_INSTALL ]; then
-  export NVM_DIR=~/.nvm
-  [[ -s $NVM_INSTALL ]] && . $NVM_INSTALL  # This loads NVM
+  export NVM_DIR="$HOME/.nvm"
+  [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+#  [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 fi
 
 # Other settings
