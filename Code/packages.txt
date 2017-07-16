@@ -5,5 +5,7 @@ donjayamanne.githistory
 donjayamanne.python
 eg2.vscode-npm-script
 msjsdiag.debugger-for-chrome
+rebornix.Ruby
 waderyan.gitblame
 xabikos.ReactSnippets
+yzhang.markdown-all-in-one

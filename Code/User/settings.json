@@ -22,5 +22,6 @@
     "[python]": {
       "editor.tabSize": 4
     },
-    "python.linting.pylintPath": "pylint"
+    "python.linting.pylintPath": "pylint",
+    "markdown.extension.preview.autoShowPreviewToSide": true
   }
