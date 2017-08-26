@@ -3,6 +3,7 @@ source /usr/local/git/contrib/completion/git-prompt.sh
 GIT_PS1_DESCRIBE_STYLE='describe'
 GIT_PS1_SHOWDIRTYSTATE=1
 GIT_PS1_SHOWCOLORHINTS=1
+GIT_PS1_SHOWUNTRACKEDFILES=1
 
 # Some escape codes that we can use to color our prompt
    RED="\[\033[0;31m\]"
