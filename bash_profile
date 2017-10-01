@@ -1,5 +1,6 @@
 BREW_PREFIX=$(brew --prefix)
-export PATH=/usr/local/bin:/usr/local/sbin:$HOME/.fastlane/bin:$PATH
+export PATH=/usr/local/bin:/usr/local/sbin:$PATH
+export PATH=$HOME/.fastlane/bin:$PATH
 export JAVA_HOME=$(/usr/libexec/java_home -v 1.8)
 export ANDROID_HOME=$HOME/Library/Android/sdk
 export PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/tools/bin
