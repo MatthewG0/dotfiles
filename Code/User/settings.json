@@ -1,27 +1,40 @@
 // Place your settings in this file to overwrite the default settings
 {
-    "editor.tabSize": 2,
-    "editor.minimap.enabled": true, 
-    "eslint.run": "onType",
-    "eslint.autoFixOnSave": true,
-    "files.exclude": {
-      "**/.git": true,
-      "**/.svn": true,
-      "**/.hg": true,
-      "**/.DS_Store": true,
-      "**/build/**": true,
-      "**/node_modules/**": true
-    },
-    "window.zoomLevel": 0,
-    "workbench.colorTheme": "Visual Studio Light",
-    "workbench.iconTheme": "vs-seti",
-    "window.nativeTabs": true,
-    "ruby.lint": {
-      "rubocop": true
-    },
-    "[python]": {
-      "editor.tabSize": 4
-    },
-    "python.linting.pylintPath": "pylint",
-    "markdown.extension.preview.autoShowPreviewToSide": true
+  "editor.tabSize": 2,
+  "editor.minimap.enabled": true,
+  "eslint.run": "onType",
+  "eslint.autoFixOnSave": true,
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/.DS_Store": true,
+    "**/node_modules/**": true
+  },
+  "window.zoomLevel": 0,
+  "workbench.colorTheme": "Visual Studio Light",
+  "workbench.iconTheme": "vs-seti",
+  "window.nativeTabs": true,
+  "ruby.lint": {
+    "rubocop": true
+  },
+  "[python]": {
+    "editor.tabSize": 4
+  },
+  "python.linting.pylintPath": "pylint",
+  "markdown.extension.preview.autoShowPreviewToSide": true,
+  "workbench.editor.enablePreview": false,
+  "workbench.statusBar.feedback.visible": false,
+  "editor.formatOnSave": true,
+  "npm.enableScriptExplorer": true,
+  "gitlens.advanced.messages": {
+    "suppressShowKeyBindingsNotice": true
+  },
+  "gitlens.currentLine.enabled": false,
+  "gitlens.hovers.currentLine.over": "line",
+  "gitlens.codeLens.enabled": false,
+  "gitlens.hovers.currentLine.enabled": false,
+  "eslint.options": {
+    "ignorePattern": "**/node_modules/**"
   }
+}

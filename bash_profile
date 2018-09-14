@@ -45,5 +45,9 @@ fi
 alias 'gcan=git commit --amend --no-edit'
 alias 'gpmh=git push -u me HEAD'
 alias 'gpf=git push -f'
+alias 'gpr=git pull --rebase'
 alias 'ff=find . -name '
 alias 'gbd=git push me --delete $1 ; git branch -D $1'
+REM() {
+  echo %* &>/dev/null
+}
