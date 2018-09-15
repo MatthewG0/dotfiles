@@ -36,5 +36,10 @@
   "gitlens.hovers.currentLine.enabled": false,
   "eslint.options": {
     "ignorePattern": "**/node_modules/**"
+  },
+  "workbench.colorCustomizations": {
+    "terminal.background": "#000000",
+    "terminal.foreground": "#dadada",
+    "terminal.selectionBackground": "#00eeff83"
   }
 }
