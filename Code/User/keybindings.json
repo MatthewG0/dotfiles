@@ -29,5 +29,9 @@
     "key": "ctrl+shift+cmd+left",
     "command": "-editor.action.smartSelect.shrink",
     "when": "editorTextFocus"
+  },
+  {
+    "key": "alt+`",
+    "command": "workbench.action.terminal.focusNext"
   }
 ]

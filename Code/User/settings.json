@@ -9,7 +9,11 @@
     "**/.svn": true,
     "**/.hg": true,
     "**/.DS_Store": true,
-    "**/node_modules/**": true
+    "**/node_modules/**": true,
+    "**/.classpath": true,
+    "**/.project": true,
+    "**/.settings": true,
+    "**/.factorypath": true
   },
   "window.zoomLevel": 0,
   "workbench.colorTheme": "Visual Studio Light",
@@ -23,7 +27,6 @@
   },
   "python.linting.pylintPath": "pylint",
   "markdown.extension.preview.autoShowPreviewToSide": true,
-  "workbench.editor.enablePreview": false,
   "workbench.statusBar.feedback.visible": false,
   "editor.formatOnSave": true,
   "npm.enableScriptExplorer": true,
@@ -35,11 +38,28 @@
   "gitlens.codeLens.enabled": false,
   "gitlens.hovers.currentLine.enabled": false,
   "eslint.options": {
-    "ignorePattern": "**/node_modules/**"
+    "ignorePattern": "**/node_modules/** **/build/**"
   },
   "workbench.colorCustomizations": {
     "terminal.background": "#000000",
     "terminal.foreground": "#dadada",
     "terminal.selectionBackground": "#00eeff83"
-  }
+  },
+  "[yaml]": {
+    "editor.insertSpaces": true,
+    "editor.tabSize": 2,
+    "editor.autoIndent": false
+  },
+  "javascript.preferences.quoteStyle": "single",
+  "typescript.preferences.quoteStyle": "single",
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "vs-kubernetes": {
+    "vs-kubernetes.draft-path": "/Users/matthew.goldberg/.vs-kubernetes/tools/draft/darwin-amd64/draft",
+    "vs-kubernetes.helm-path": "/Users/matthew.goldberg/.vs-kubernetes/tools/helm/darwin-amd64/helm",
+    "vs-kubernetes.minikube-path": "/Users/matthew.goldberg/.vs-kubernetes/tools/minikube/darwin-amd64/minikube"
+  },
+  "gitlens.views.compare.files.layout": "tree",
+  "editor.suggestSelection": "first",
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "extensions.ignoreRecommendations": false
 }

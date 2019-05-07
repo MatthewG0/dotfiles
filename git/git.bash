@@ -1,5 +1,3 @@
-source /usr/local/git/contrib/completion/git-completion.bash
-source /usr/local/git/contrib/completion/git-prompt.sh
 GIT_PS1_DESCRIBE_STYLE='describe'
 GIT_PS1_SHOWDIRTYSTATE=1
 GIT_PS1_SHOWCOLORHINTS=1
@@ -12,4 +10,7 @@ YELLOW="\[\033[1;33m\]"
   BLUE="\[\033[0;34m\]"
 RESET="\[\e[0m\]"
 
-export PROMPT_COMMAND='__git_ps1 "[\u@${BLUE}\h${RESET}:\w" "]\\\$ ";'${PROMPT_COMMAND}
+if [[ ! $PROMPT_COMMAND =~ '__git_ps1' ]] ;
+then
+   export PROMPT_COMMAND='__git_ps1 "[\u@${BLUE}\h${RESET}:\w" "]\\\$ ";'${PROMPT_COMMAND}
+fi

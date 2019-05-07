@@ -1,0 +1,2 @@
+#!/bin/bash
+git log --since="2018-06-01" --name-only --no-merges --date=format:'%Y-%m-%d %H:%M:%S' --pretty=format:']}, {%n  "commit": "%H",%n  "author": "%aE",%n  "date": "%ad", %n  "message": "%f", %n  "files": [' | perl -pe 's/(.*\w)$/"\1",/' | tail -c +4 | cat <(echo {\"log\": [) - <(echo ]} ]}) | perl -0777 -pe 's/,(\s*[^\s\[{"])/\1/g'
