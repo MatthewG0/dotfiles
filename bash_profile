@@ -18,9 +18,6 @@ path_add $ANDROID_HOME/tools
 path_add $ANDROID_HOME/tools/bin
 path_add $ANDROID_HOME/platform-tools
 
-# iTerm2 shell integration
-test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
-
 # iTerm2 tab titles
 # function title {
 #   local pwd_prompt='echo -ne "\033]0;$(dirs -0)\007";'
@@ -41,6 +38,9 @@ fi
 if [ -e ~/.bashrc ]; then
   source ~/.bashrc
 fi
+
+# iTerm2 shell integration
+test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
 
 
 NVM_INSTALL=/usr/local/Cellar/nvm/0.33.2/nvm.sh
