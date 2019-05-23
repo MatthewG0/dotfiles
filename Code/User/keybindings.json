@@ -33,5 +33,9 @@
   {
     "key": "alt+`",
     "command": "workbench.action.terminal.focusNext"
+  },
+  {
+    "key": "alt+cmd+`",
+    "command": "workbench.action.togglePanelPosition"
   }
 ]

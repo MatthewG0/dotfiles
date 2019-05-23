@@ -1,6 +1,7 @@
 - defaults:
     link:
       relink: true
+      create: true
       
 - clean: ['~']
 
@@ -17,6 +18,7 @@
     ~/.inputrc: inputrc
     ~/.atom: atom
     ~/.pylintrc: pylintrc
+    ~/Library/KeyBindings/DefaultKeyBinding.dict: DefaultKeyBinding.dict
     ~/Library/Application Support/Code/User/settings.json: Code/User/settings.json
     ~/Library/Application Support/Code/User/keybindings.json: Code/User/keybindings.json
     ~/Library/Application Support/Code/User/snippets: Code/User/snippets
