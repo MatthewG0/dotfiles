@@ -3,7 +3,6 @@
   "editor.tabSize": 2,
   "editor.minimap.enabled": true,
   "eslint.run": "onType",
-  "eslint.autoFixOnSave": true,
   "files.exclude": {
     "**/.git": true,
     "**/.svn": true,
@@ -27,8 +26,6 @@
   },
   "python.linting.pylintPath": "pylint",
   "markdown.extension.preview.autoShowPreviewToSide": true,
-  "workbench.statusBar.feedback.visible": false,
-  "editor.formatOnSave": true,
   "npm.enableScriptExplorer": true,
   "gitlens.advanced.messages": {
     "suppressShowKeyBindingsNotice": true
@@ -47,8 +44,7 @@
   },
   "[yaml]": {
     "editor.insertSpaces": true,
-    "editor.tabSize": 2,
-    "editor.autoIndent": false
+    "editor.tabSize": 2
   },
   "javascript.preferences.quoteStyle": "single",
   "typescript.preferences.quoteStyle": "single",
@@ -60,6 +56,12 @@
   },
   "gitlens.views.compare.files.layout": "tree",
   "editor.suggestSelection": "first",
-  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-  "extensions.ignoreRecommendations": false
+  "extensions.ignoreRecommendations": false,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "terminal.integrated.shell.osx": "/bin/zsh",
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
 }

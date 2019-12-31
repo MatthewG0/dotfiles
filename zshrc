@@ -118,3 +118,6 @@ if [ -e $NVM_INSTALL ]; then
   [ -s "$NVM_INSTALL" ] && \. "$NVM_INSTALL"  # This loads nvm
 #  [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 fi
+
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+
