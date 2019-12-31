@@ -43,7 +43,7 @@ fi
 test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
 
 
-NVM_INSTALL=/usr/local/Cellar/nvm/0.33.2/nvm.sh
+NVM_INSTALL=/usr/local/opt/nvm/nvm.sh
 if [ ! -e $NVM_INSTALL ]; then
   NVM_INSTALL=~/.nvm/nvm.sh
 fi
