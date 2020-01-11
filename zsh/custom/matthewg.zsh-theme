@@ -44,7 +44,7 @@ function ssh_connection() {
 local ret_status="%(?:%{$PROMPT_SUCCESS_COLOR%}:%{$PROMPT_FAILURE_COLOR%}):%{$reset_color%}"
 local user_status="$(ssh_connection)%{$USERNAME_COLOR%}%n@%{$MACHINE_COLOR%}%m%{$reset_color%}"
 
-PROMPT='[$user_status$ret_status%~%{$reset_color%}$(my_git_prompt)$(virtualenv_prompt_info)%{$reset_color$PROMPT_PROMPT%}]$ZSH_THEME_PROMPT_SUFFIX%{$reset_color%}  '
+PROMPT='[$user_status$ret_status%~%{$reset_color%}$(my_git_prompt)$(virtualenv_prompt_info)%{$reset_color$PROMPT_PROMPT%}]$ZSH_THEME_PROMPT_SUFFIX%{$reset_color%} '
 
 # Show timestamp
 RPROMPT='%{$TIMESTAMP_COLOR%}[%D{%m/%d %l:%M.%S %p}]%{$reset_color%}'
