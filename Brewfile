@@ -1,10 +1,10 @@
 tap 'caskroom/cask'
-tap 'caskroom/versions'
+# tap 'caskroom/versions'
 tap 'homebrew/binary'
 tap 'homebrew/bundle'
 tap 'homebrew/core'
 tap 'homebrew/dupes'
-tap 'homebrew/versions'
+# tap 'homebrew/versions'
 
 brew 'bash'
 brew 'bash-completion'

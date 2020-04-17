@@ -40,7 +40,7 @@ if [ -e ~/.bashrc ]; then
 fi
 
 # iTerm2 shell integration
-test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
+# test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
 
 
 NVM_INSTALL=/usr/local/opt/nvm/nvm.sh
@@ -53,6 +53,22 @@ if [ -e $NVM_INSTALL ]; then
 #  [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 fi
 
+# Eternal bash history.
+# ---------------------
+# Undocumented feature which sets the size to "unlimited".
+# http://stackoverflow.com/questions/9457233/unlimited-bash-history
+export HISTFILESIZE=
+export HISTSIZE=
+export HISTTIMEFORMAT="[%F %T] "
+# Change the file location because certain bash sessions truncate .bash_history file upon close.
+# http://superuser.com/questions/575479/bash-history-truncated-to-500-lines-on-each-login
+export HISTFILE=~/.bash_eternal_history
+export HISTCONTROL=ignoreboth:erasedups
+
+# Force prompt to write history after every command.
+# http://superuser.com/questions/20900/bash-history-loss
+PROMPT_COMMAND="history -a; $PROMPT_COMMAND"
+
 # Other settings
 alias 'gcan=git commit --amend --no-edit'
 alias 'gpmh=git push -u me HEAD'
@@ -60,6 +76,7 @@ alias 'gpf=git push -f'
 alias 'gpr=git pull --rebase'
 alias 'ff=find . -name '
 alias 'gbd=git push me --delete $1 ; git branch -D $1'
+alias 'pip=python3 -m pip'
 REM() {
   echo %* &>/dev/null
 }
